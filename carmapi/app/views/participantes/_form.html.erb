@@ -11,37 +11,40 @@
     </div>
   <% end %>
 
+ <form class="form-control col-md-10">
   <div class="field">
     <%= f.label :nome_completo %>
-    <%= f.text_field :nome_completo %>
+    <%= f.text_field :nome_completo, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :data_nascimento %>
-    <%= f.date_select :data_nascimento %>
+    <%= f.date_select :data_nascimento, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :cidade %>
-    <%= f.text_field :cidade %>
+    <%= f.text_field :cidade , class:"form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :estado %>
-    <%= f.text_field :estado %>
+    <%= f.text_field :estado, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :rg %>
-    <%= f.text_field :rg %>
+    <%= f.text_field :rg , class:"form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :cpf %>
-    <%= f.text_field :cpf %>
+    <%= f.text_field :cpf, class:"form-control" %>
   </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+</form>
