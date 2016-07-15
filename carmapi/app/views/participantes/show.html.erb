@@ -1,34 +1,41 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome completo:</strong>
-  <%= @participante.nome_completo %>
-</p>
+<div class="container">
+    <div class="row">	
+	<p>
+	  <strong>Nome completo:</strong>
+	  <%= @participante.nome_completo %>
+	</p>
 
-<p>
-  <strong>Data nascimento:</strong>
-  <%= @participante.data_nascimento %>
-</p>
+	<p>
+	  <strong>Data nascimento:</strong>
+	  <%= @participante.data_nascimento %>
+	</p>
 
-<p>
-  <strong>Cidade:</strong>
-  <%= @participante.cidade %>
-</p>
+	<p>
+	  <strong>Cidade:</strong>
+	  <%= @participante.cidade %>
+	</p>
+    </div>
+    <div class="row">
+	<p>
+	  <strong>Estado:</strong>
+	  <%= @participante.estado %>
+	</p>
 
-<p>
-  <strong>Estado:</strong>
-  <%= @participante.estado %>
-</p>
+	<p>
+	  <strong>Rg:</strong>
+	  <%= @participante.rg %>
+	</p>
 
-<p>
-  <strong>Rg:</strong>
-  <%= @participante.rg %>
-</p>
+	<p>
+	  <strong>Cpf:</strong>
+	  <%= @participante.cpf %>
+	</p>
+     </div>
+</div>
 
-<p>
-  <strong>Cpf:</strong>
-  <%= @participante.cpf %>
-</p>
+<hr/>
 
-<%= link_to 'Edit', edit_participante_path(@participante) %> |
-<%= link_to 'Back', participantes_path %>
+<%= link_to 'Editar', edit_participante_path(@participante), class:"btn btn-primary" %> 
+<%= link_to 'Voltar', participantes_path, class:"btn btn-default" %>
